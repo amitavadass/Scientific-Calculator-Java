@@ -282,7 +282,7 @@ public class ScientificCalculatorApp extends JFrame {
                 case "=" -> engine.calculate();
                 case "√", "sin", "cos", "tan", "log", "ln", "±", "%" -> engine.applyUnaryFunction(cmd);
             }
-            // **FIX APPLIED HERE**: Only update display on success
+            
             updateDisplay();
         } catch (ArithmeticException ex) {
             displayField.setText("Error");
